@@ -1,0 +1,691 @@
+{
+  "intents": [
+    {
+      "intent": "cancelar",
+      "examples": [
+        {
+          "text": "Desejo cancelar minha cotação"
+        },
+        {
+          "text": "Favor cancelar"
+        },
+        {
+          "text": "Não quero mais fazer cotação"
+        },
+        {
+          "text": "Quero cancelar"
+        }
+      ],
+      "description": "Detecta a intenção de cancelamento de cotação"
+    },
+    {
+      "intent": "cotacao",
+      "examples": [
+        {
+          "text": "dólar"
+        },
+        {
+          "text": "euro"
+        },
+        {
+          "text": "iene"
+        },
+        {
+          "text": "Qual a cotação de hoje?"
+        },
+        {
+          "text": "Qual a cotação do dólar hoje?"
+        },
+        {
+          "text": "Qual o preço do dólar?"
+        },
+        {
+          "text": "Qual o valor da moeda hoje?"
+        },
+        {
+          "text": "Quanto vale o real?"
+        },
+        {
+          "text": "Quero fazer uma cotação"
+        },
+        {
+          "text": "Quero saber a cotação"
+        }
+      ],
+      "description": "Detecta intenção de cotação de moeda"
+    },
+    {
+      "intent": "finalizacao",
+      "examples": [
+        {
+          "text": "Até breve"
+        },
+        {
+          "text": "Até logo"
+        },
+        {
+          "text": "Obrigado"
+        },
+        {
+          "text": "Tchau"
+        },
+        {
+          "text": "Valeu"
+        }
+      ],
+      "description": "Detecta intenção de despedida"
+    },
+    {
+      "intent": "lista_moeda",
+      "examples": [
+        {
+          "text": "Lista de conversão"
+        },
+        {
+          "text": "Lista de moedas"
+        },
+        {
+          "text": "Quais moedas você faz cotação?"
+        },
+        {
+          "text": "Qual a lista das moedas que eu posso cotar?"
+        }
+      ],
+      "description": "Detecta intenção de dúvida a respeito da lista de moedas para cotação"
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "Olá"
+        }
+      ],
+      "description": "Detecta intenção de saudação"
+    },
+    {
+      "intent": "sobre",
+      "examples": [
+        {
+          "text": "como você pode me ajudar?"
+        },
+        {
+          "text": "estou com dúvida"
+        },
+        {
+          "text": "o que você faz?"
+        },
+        {
+          "text": "quero mais informações"
+        }
+      ],
+      "description": "Detecta a intenção de informação sobre o serviço"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "moeda",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Baht Tailandês",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bitcoin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Boliviano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coroa Dinamarquesa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coroa Norueguesa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coroa Sueca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dirham dos Emirados",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dogecoin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar Americano",
+          "synonyms": [
+            "dolar",
+            "Dólar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar Australiano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar Canadense",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar de Cingapura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar de Hong Kong",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar Neozelandês",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dólar Taiuanês",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ethereum",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Euro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Franco Suíço",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Guarani Paraguaio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Iene Japonês",
+          "synonyms": [
+            "iene"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Libra Esterlina",
+          "synonyms": [
+            "libra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Litecoin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nova Lira Turca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Novo Shekel Israelense",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Peso Argentino",
+          "synonyms": [
+            "peso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Peso Chileno",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Peso Colombiano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Peso Mexicano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Peso Uruguaio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rand Sul-Africano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Riyal Saudita",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rublo Russo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rúpia Indiana",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sol do Peru",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "XRP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yuan Chinês",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Zlóti Polonês",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/sergiosdlima%40gmail.com_dev/default/currencybot.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Eu sou o CâmbioBot, um robô com expertise em cotação de moedas. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_5_1634748651800",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual moeda deseja cotar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1634749073845",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1634749073888",
+      "previous_sibling": "handler_4_1634749073888"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1634749073845",
+      "context": {
+        "moeda": "@moeda"
+      },
+      "conditions": "@moeda",
+      "event_name": "input",
+      "dialog_node": "handler_4_1634749073888"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, estou cancelando..."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_5_1634748651800",
+      "context": {
+        "cancelar": true
+      },
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#cancelar",
+      "event_name": "generic",
+      "dialog_node": "handler_8_1634750808938"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Até breve."
+              },
+              {
+                "text": "Até logo."
+              },
+              {
+                "text": "Bye bye."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#finalizacao",
+      "dialog_node": "node_10_1634663854687",
+      "previous_sibling": "node_9_1634663978853"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#saudacao",
+      "dialog_node": "node_2_1634663713819",
+      "previous_sibling": "node_10_1634663854687"
+    },
+    {
+      "type": "frame",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "currency": "$moeda"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#cotacao",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1634748651800",
+      "previous_sibling": "node_2_1634663713819"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu sou um robô com expertise em conversão de moedas capaz de dar informações de cotação de mais de 30 moedas comparadas ao real brasileiro."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#sobre",
+      "dialog_node": "node_9_1634663978853",
+      "previous_sibling": "node_9_1634748061708"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu verifico a cotação das principais moedas do mundo, como por exemplo, o Dólar Americano, Euro, Libra Esterlina, Iene Japonês, Dólar Australiano, Franco Suíço, Dólar Canadense, Peso Argentino, Bitcoin e Yuan Chinês para citar alguns. Qual moeda você gostaria de fazer uma cotação?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#lista_moeda",
+      "dialog_node": "node_9_1634748061708",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa noite!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1634663713819",
+      "conditions": "now().after('18:01')",
+      "dialog_node": "response_1_1634663823163",
+      "previous_sibling": "response_4_1634663812979"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Bom dia!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1634663713819",
+      "conditions": "now().after('06:00') && now().before('12:00')",
+      "dialog_node": "response_3_1634663799668"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa tarde!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1634663713819",
+      "conditions": "now().after('12:01') && now().before('18:00')",
+      "dialog_node": "response_4_1634663812979",
+      "previous_sibling": "response_3_1634663799668"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não foi possível fazer a cotação no momento, tente mais tarde."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1634748651800",
+      "context": {},
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1634749048655",
+      "previous_sibling": "response_9_1634749047162"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cotação cancelada."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634748651800",
+      "context": {
+        "cancelar": null
+      },
+      "conditions": "#cancelar",
+      "dialog_node": "response_7_1634750934269",
+      "previous_sibling": "slot_4_1634749073845"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<? $webhook_result_1.msg ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634748651800",
+      "context": {},
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_9_1634749047162",
+      "previous_sibling": "response_7_1634750934269"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1634748651800",
+      "variable": "$moeda",
+      "dialog_node": "slot_4_1634749073845",
+      "previous_sibling": "handler_8_1634750808938"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Cotação de moedas para o Real",
+  "language": "pt-br",
+  "description": "Utiliza uma API de cotações de moedas para comparar o valor de venda de uma moeda frente ao Real Brasileiro."
+}
